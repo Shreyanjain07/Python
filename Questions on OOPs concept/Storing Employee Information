@@ -1,0 +1,14 @@
+# Create a class “Programmer” for storing information of few programmers working at Microsoft
+
+class Programmer:
+    company = "Microsoft"
+    def __init__(self, name, salary, pin):
+        self.name = name
+        self.salary = salary
+        self.pin = pin
+
+p = Programmer("Shreyans", 1200000, 767030)
+q = Programmer("Abhisekh", 1150000, 767001)
+print(p.name, p.salary, p.pin)
+print(q.name, q.salary, q.pin)
+
