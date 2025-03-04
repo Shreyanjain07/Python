@@ -1,0 +1,25 @@
+# Add a static method in Calculator, to greet the user with hello.
+
+
+class Calculator:
+    def __init__(self, num):
+        self.n = num
+    
+    def square(self):
+        print(f"The square is {self.n * self.n}")
+
+    def cube(self):
+        print(f"The cube is {self.n*self.n*self.n}")
+
+    def squareroot(self):
+        print(f"The Squareroot is {self.n**1/2}")
+
+    @staticmethod
+    def greet():
+        print("Hello there!")    
+
+a = Calculator(4)
+a.greet()
+a.square()
+a.cube()
+a.squareroot()
