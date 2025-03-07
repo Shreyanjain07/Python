@@ -1,0 +1,26 @@
+# Create a class ‘Pets’ from a class ‘Animals’ and further create a class ‘Dog’ from ‘Pets’. Add a method ‘bark’ to class ‘Dog’.
+
+class Animals:
+    def __init__(self, Animal):
+        self.Animal = Animal
+
+
+class Pets(Animals):
+    def __init__(self, Animal):
+        super().__init__(Animal)
+
+
+class Dog(Pets):
+    def __init__(self, Animal):
+        super().__init__(Animal)
+
+    @staticmethod
+    def bark():
+        print("Bow Bow!")
+
+    def show(self):
+        print(f"the {self.Animal} is barking")
+        self.bark()
+
+a = Dog("Kutta")
+a.show()
